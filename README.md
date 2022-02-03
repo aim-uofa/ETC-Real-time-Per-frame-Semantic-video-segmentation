@@ -1,4 +1,4 @@
-# ECCV2020: Efficient Semantic Video Segmentation with Per-frame Inference
+# Efficient Semantic Video Segmentation with Per-frame Inference (ECCV'20)
 In semantic segmentation, most existing real-time deep
 models trained with each frame independently may produce inconsistent results for a video sequence. 
 Advanced methods take into considerations
@@ -32,7 +32,7 @@ We employ the temporal loss the temporal knowledge distillation methods to adapt
 | +temporal loss + distillation | 73.06 |70.56 |
 
 
-Note: Other chcekpoints can be obtained by email: yifan.liu04@adelaide.edu.au if needed.
+Note: Other chcekpoints can be obtained by email: yifan.liu04@adelaide.edu.au 
 
 
 ## Requirement
@@ -50,8 +50,10 @@ We have tested our code on Ubuntu 16.04.
 
 ## Quick start to test the model
 1. download the [Cityscape dataset](https://www.cityscapes-dataset.com/)
-2. python tool/demo.py.
+2. python tool/demo.py
+
 ## Evaluation the Temporal Consistency
+
 To evaluate the temporal consistency, you need to install the flownet first.
 1. You need to download the video data of the [cityscapes](https://www.cityscapes-dataset.com/downloads/): leftImg8bit_sequence_trainvaltest.zip 
 2. The download data should be placed in data/cityscapes/leftImg8bit/
@@ -69,18 +71,18 @@ Coming soon.
 
 
 ## Acknowledgments
-The test code borrows from [semseg](https://github.com/hszhao/semseg).
+The test code is from [semseg](https://github.com/hszhao/semseg).
 
 If you find this code useful, please cite:
 
-
-@article{liu2020efficient,
-  title={Efficient Semantic Video Segmentation with Per-frame Inference},
-  author={Liu, Yifan and Shen, Chunhua and Yu, Changqian and Wang, Jingdong},
-  journal={ECCV},
-  year={2020}
+```
+@inproceedings{liu2020efficient,
+  title     = {Efficient Semantic Video Segmentation with Per-frame Inference},
+  author    = {Liu, Yifan and Shen, Chunhua and Yu, Changqian and Wang, Jingdong},
+  booktitle = {Proc. Eur. Conf. Computer Vision},
+  year      = {2020}
 }
-
+```
 
 
 
